@@ -15,7 +15,7 @@ export default function Home() {
                     <Link to="/buttonsAndIcons">Buttons and Icons</Link>
                 </li>
                 <li>
-                    <Link to="/actionButton3">Action Button3</Link>
+                    <Link to="/actionButton">Action Button</Link>
                 </li>
                 <li>
                     <Link to="/navbar">Navbar</Link>
