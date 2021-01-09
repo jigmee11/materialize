@@ -1,20 +1,25 @@
-import React,{useRef,useEffect} from 'react'
+import React, { useRef, useEffect } from 'react'
 import M from 'materialize-css'
 import HeadButton from './headButton';
 export default function FormsAndInput() {
-      const sel=useRef();
-     useEffect(()=>{
-       M.FormSelect.init(sel.current,{
-       })
-     },[sel ])
-     const select=useRef();
-     useEffect(()=>{
-       M.FormSelect.init(select.current,{
-       })
-     },[select])
+      const selectOne = useRef();
+      const selectTwo = useRef();
+      useEffect(() => {
+            M.FormSelect.init(selectOne.current, {
+            })
+      }, [selectOne])
+      useEffect(() => {
+            M.FormSelect.init(selectTwo.current, {
+            })
+      }, [selectTwo])
+      const select = useRef();
+      useEffect(() => {
+            M.FormSelect.init(select.current, {
+            })
+      }, [select])
       return (
             <div className="container">
-                  <HeadButton name="Forms & Input"/>
+                  <HeadButton name="Forms & Input" />
                   <div class="row">
                         <form class="col s12">
                               <div class="row">
@@ -38,7 +43,7 @@ export default function FormsAndInput() {
                               <div class="row">
                                     <div class="col s12">
                                           Numbers of user:
-          <div class="input-field inline">
+                                          <div class="input-field inline">
                                                 <input id="email_inline" type="email" class="validate" />
                                                 <label for="email_inline">#</label>
                                                 <span class="helper-text" data-error="wrong" data-success="right">Helper text aaaa</span>
@@ -70,7 +75,7 @@ export default function FormsAndInput() {
 
                   <div class='row'>
                         <div class="input-field col s12">
-                              <select multiple ref={sel}>
+                              <select multiple ref={selectOne}>
                                     <option value="" disabled selected >Select Option</option>
                                     <option value="1">Option 1</option>
                                     <option value="2">Option 2</option>
@@ -90,6 +95,17 @@ export default function FormsAndInput() {
                                     </optgroup>
                               </select>
                               <label>Optgroups</label>
+                        </div>
+                  </div>
+                  <div class='row'>
+                        <div class="input-field col s12">
+                              <select multiple ref={selectTwo}>
+                                    <option value="" disabled selected >Select Option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                              </select>
+                              <label>Select list</label>
                         </div>
                   </div>
 
@@ -112,29 +128,32 @@ export default function FormsAndInput() {
                               </form>
                         </form>
                   </div>
-                  {/* <div class="row">
-                        <form action="#">
-                                    <label>
-                                          <input type="checkbox" />
-                                          <span>HTML</span>
-                                    </label>
-                                    <br></br>
-                                    <label>
-                                          <input type="checkbox" checked="checked" />
-                                          <span>CSS</span>
-                                    </label>
-                                    <br></br>
-                                    <label>
-                                          <input type="checkbox" class="filled-in" checked="checked" />
-                                          <span>JS</span>
-                                    </label>
-                                    <br></br>
-                                    <label>
-                                          <input id="indeterminate-checkbox" type="checkbox" disabled='disabled' />
-                                          <span>PHP</span>
-                                    </label>
-                        </form>
-                  </div> */}
+                  <form action="#">
+                        <p>
+                              <label>
+                                    <input type="checkbox" />
+                                    <span>HTML</span>
+                              </label>
+                        </p>
+                        <p>
+                              <label>
+                                    <input type="checkbox" checked="checked" />
+                                    <span>CSS</span>
+                              </label>
+                        </p>
+                        <p>
+                              <label>
+                                    <input type="checkbox" />
+                                    <span>HTML</span>
+                              </label>
+                        </p>
+                        <p>
+                              <label>
+                                    <input type="checkbox" disabled="disabled" />
+                                    <span>PHP</span>
+                              </label>
+                        </p>
+                  </form>
             </div>
       );
 }

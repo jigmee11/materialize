@@ -5,7 +5,9 @@ export default function HeadButton({ name }) {
       const drop = useRef();
       useEffect(()=>{
             M.Dropdown.init(drop.current,{
-                  hoverEnabled: true
+                  hover:true,
+                  coverTrigger:false,
+                  constrainWidth:false
             });
       },[]);
       return (
