@@ -1,15 +1,10 @@
 import React from 'react'
+import HeadButton from './headButton';
 
 export default function Collection(){
       return(
             <div className="container">
-                  <h1 className="center-align">Collection & Badges</h1>
-                  <div className="row">
-                        <button class="col s1 blue btn-large">CSS 1</button>
-                        <button class="col s1 offset-s2 green btn-large">CSS 2</button>
-                        <button class="col s1 offset-s2 yellow btn-large" style={{color: 'black'}}>JS 1</button>
-                        <button class="col s1 offset-s2 red btn-large" style={{color: 'black'}}>JS 2</button>
-                  </div>
+                  <HeadButton name="Collections And Badges"/>
                   <ul class="collection">
                         <li class="collection-item">First Item</li>
                         <li class="collection-item">Second Item</li>

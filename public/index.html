@@ -30,8 +30,9 @@
     -->
   <title>React App</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+  <script src="/__/firebase/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="/__/firebase/init.js"></script>
 </head>
 
 <body>
@@ -51,5 +52,16 @@
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDIGDyD8U5c8viIP5C67qYRaO-fbQv-160",
+    authDomain: "chat-data-61c65.firebaseapp.com",
+    databaseURL: "https://chat-data-61c65.firebaseio.com",
+    projectId: "chat-data-61c65",
+    storageBucket: "chat-data-61c65.appspot.com",
+    messagingSenderId: "896233321475",
+    appId: "1:896233321475:web:3fd114ea1c9ce05133ca36"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
 </html>

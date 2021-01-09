@@ -1,15 +1,10 @@
 import React from 'react'
+import HeadButton from './headButton'
 
 export default function ButtonsAndIcons() {
     return (
         <div className="container">
-            <h1 className="center-align">Buttons & Icons</h1> 
-            <div className="row">
-                <button class="col s1 blue btn-large">CSS 1</button>
-                <button class="col s1 offset-s2 green btn-large">CSS 2</button>
-                <button class="col s1 offset-s2 yellow btn-large" style={{color: 'black'}}>JS 1</button>
-                <button class="col s1 offset-s2 red btn-large" style={{color: 'black'}}>JS 2</button>
-            </div>
+            <HeadButton name="Buttons & Icons"/>
             <div className="row">
                 <a style={{marginRight: '11px'}} class="waves-effect white-text waves-light btn-large">Read more</a>
                 <a style={{marginRight: '11px'}} class="waves-effect white-text waves-light btn-large">Read more</a>

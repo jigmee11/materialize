@@ -11,6 +11,13 @@ import Typography from './pages/typography';
 import ActionButton from './pages/actionButton'
 import Navbar from './pages/navbar';
 import Collection from './pages/collection';
+import Grid from './pages/grid';
+import Cart from './pages/cart'
+import Footer from './pages/breadCrumpsFooter';
+import FormsAndInput from './pages/formsAndInput';
+import FancyFormAndInput from './pages/fancyFormAndInput';
+import ChipsPagination from './pages/chipsPagination';
+import Carousel from './pages/carousel';
 
 function App() {
   return (
@@ -36,6 +43,27 @@ function App() {
         </Route>
         <Route path="/collections" exact>
           <Collection/>
+        </Route>
+        <Route path="/grid" exact>
+          <Grid/>
+        </Route>
+        <Route path="/card">
+          <Cart/>
+        </Route>
+        <Route path="/footer" exact>
+          <Footer/>
+        </Route>
+        <Route path="/formsAndInput" exact>
+          <FormsAndInput/>
+        </Route>
+        <Route path="/fancyFormAndInput" exact>
+          <FancyFormAndInput/>
+        </Route>
+        <Route path="/chipsPagination" exact>
+          <ChipsPagination/>
+        </Route>
+        <Route path="/carousel" exact>
+          <Carousel/>
         </Route>
       </Switch>
     </Router>

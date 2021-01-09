@@ -23,6 +23,27 @@ export default function Home() {
                 <li>
                     <Link to="/collections">Collection</Link>
                 </li>
+                <li>
+                    <Link to="/grid">Grid</Link>
+                </li>
+                <li>
+                    <Link to="/card">Cart</Link>
+                </li>
+                <li>
+                    <Link to="/footer">Footer</Link>
+                </li>
+                <li>
+                    <Link to="/formsAndInput">Forms And Input</Link>
+                </li>
+                <li>
+                    <Link to="/fancyFormAndInput">Fancy Form And Input</Link>
+                </li>
+                <li>
+                    <Link to="/chipsPagination">Chips And Pagination</Link>
+                </li>
+                <li>
+                    <Link to="/carousel">Carousel</Link>
+                </li>
             </ul>
         </div>
     )
